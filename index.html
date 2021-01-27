@@ -17,37 +17,70 @@
     <title>Pioneer Bank</title>
   </head>
   <body>
-     <!-- header part of this pioneer bank project -->
-     <section id="login-area">
-
-    <header class="mt-5">
+    <!-- header part of this pioneer bank project -->
+    <section id="login-area">
+      <header class="mt-5">
         <div class="container">
-             <!-- heading text of the bank -->
-             <div class="heading-text">
-                  <h1 class="text-center">Welcome to Pioneer Bank</h1>
-             </div>
-         
+          <!-- heading text of the bank -->
+          <div class="heading-text">
+            <h1 class="text-center">Welcome to Pioneer Bank</h1>
+          </div>
         </div>
       </header>
       <main>
-          <div class="container">
-              <div class="submit-area">
-                  <h4>Login</h4>
-                  <input type="email" placeholder="Enter your Email" name="" id="" class="form-control"> <br>
-                  <input type="password" name="" id="" placeholder="Enter Your Password" class="form-control"> <br>
-                  <button id="login" class="btn btn-success">Enter</button>
+        <div class="container">
+          <div class="submit-area">
+            <h4>Login</h4>
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              name=""
+              id=""
+              class="form-control"
+            />
+            <br />
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="Enter Your Password"
+              class="form-control"
+            />
+            <br />
+            <button id="login" class="btn btn-success">Enter</button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section class="transaction">
+      <div class="container">
+        <div id="transaction-area" class="text-center">
+          <h1 class="m-5" id="transaction-heading">Transaction History</h1>
+          <div class="row">
+
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$00</h2>
+                </div>
+            </div>
+              <div class="col-md-4">
+                  <div class="withdraw status">
+                      <h5>Withdraw</h5>
+                      <h2>$00</h2>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="balance status">
+                      <h5>Balance</h5>
+                      <h2>$1250</h2>
+                  </div>
               </div>
           </div>
-      </main>
-     </section>
-
-
-
-
-
-
-
-
+        </div>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
