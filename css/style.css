@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.text-center{
+    font-weight: 700;
+    
+}
+.submit-area{
+    margin-top: 10%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px gray;
+    padding: 5%;
+}
