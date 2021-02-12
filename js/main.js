@@ -13,6 +13,18 @@ depositBtn.addEventListener("click", function () {
     // const depositNumber = parseFloat(depositAmount);
     const depositNumber = getInputNumber("depositAmount");
 
+    // add deposit number verification
+    if (depositNumber < 0) {
+        alert("Deposit amount can't be Negative or Less than 0");
+    }
+    else {
+        updateSpanText("currentDeposit", depositNumber);
+        updateSpanText("currentBalance", depositNumber);
+
+        document.getElementById("depositAmount").value = "";
+
+    }
+
     //  const currentDeposit = document.getElementById("currentDeposit").innerText;
     //  const currentDepositNumber = parseFloat(currentDeposit);
     //  const totalDeposit = depositNumber + currentDepositNumber;
@@ -31,21 +43,17 @@ depositBtn.addEventListener("click", function () {
 
 
 
-    updateSpanText("currentDeposit", depositNumber);
-    updateSpanText("currentBalance", depositNumber);
-
-    document.getElementById("depositAmount").value = "";
 
 })
 
 //  withdraw calculation event handler
 const withdrawBtn = document.getElementById("addWithdraw");
 withdrawBtn.addEventListener("click", function () {
-   const withdrawNumber = getInputNumber("withdrawAmount");
-   updateSpanText("currentWithdraw", withdrawNumber);
-   updateSpanText("currentBalance", -1* withdrawNumber );
+    const withdrawNumber = getInputNumber("withdrawAmount");
+    updateSpanText("currentWithdraw", withdrawNumber);
+    updateSpanText("currentBalance", -1 * withdrawNumber);
 
-   document.getElementById("withdrawAmount").value = "";
+    document.getElementById("withdrawAmount").value = "";
 })
 
 function getInputNumber(id) {
